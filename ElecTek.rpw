@@ -1,7 +1,8 @@
 I-Logix-RPY-Archive version 8.12.0 * 9728113
 { CGEMdiWorkspace 
 	- stubList = { IRPYRawContainer 
-		- size = 0;
+		- size = 2;
+		- value = GUID ed0fadc4-7aa3-4052-97b1-0a2ee9cdb354; GUID b70a3926-779e-4f12-aa50-03c1baca6fdf; 
 	}
 	- isLoadOnDemand = 0;
 	- myViewsWithID = { IRPYRawContainer 
@@ -10,8 +11,8 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -30,40 +31,40 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 				- _name = "Class_1";
 				- _id = GUID 7b700f55-b8ca-46fe-a0cb-4fa31fda4333;
 			}
-			- _UpLeft = 0 10 ;
-			- _DownRight = 1394 851 ;
+			- _UpLeft = 0 0 ;
+			- _DownRight = 958 453 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 1;
-			- m_bIsActiveView = 1;
+			- m_nDiagramIndex = 3;
+			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
 				- m_ptMaxPositionY = -31;
-				- m_nLeft = 26;
-				- m_nTop = 26;
-				- m_nRight = 1155;
-				- m_nBottom = 602;
+				- m_nLeft = 104;
+				- m_nTop = 104;
+				- m_nRight = 1233;
+				- m_nBottom = 680;
 			}
 			- _wasOpenedOnCloseProject = 1;
 			- _theDiagram = { IHandle 
-				- _m2Class = "IDiagram";
+				- _m2Class = "IMSC";
 				- _filename = "";
 				- _subsystem = "";
 				- _class = "";
-				- _name = "Model1";
-				- _id = GUID a3c565d4-5b3a-4f82-9c2f-8c89629ed251;
+				- _name = "Sequence_1";
+				- _id = GUID 10dacc52-cfae-4ba4-a164-6e162584b460;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1092 516 ;
+			- _DownRight = 1394 821 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 2;
-			- m_bIsActiveView = 0;
+			- m_nDiagramIndex = 0;
+			- m_bIsActiveView = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -91,11 +92,11 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 			- _UpLeft = 0 0 ;
 			- _DownRight = 1284 607 ;
 			- _instanceName = "";
-			- m_nDiagramIndex = 0;
+			- m_nDiagramIndex = 2;
 			- m_bIsActiveView = 0;
 		}
 	}
-	- _fullName = "\\\\qnap\\home\\T\él\échargements\\Cours\\Projet ElecTek\\ElecTek\\ElecTek";
+	- _fullName = "\\\\qnap\\home\\Bureau\\M1_ElecTek-master\\ElecTek";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}
