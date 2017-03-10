@@ -1,185 +1,83 @@
-<h1>Projet ElecTek</h1>
+Projet ElecTek
 
-<p>L&rsquo;objectif de ce projet est de comprendre comment mettre en &oelig;uvre un d&eacute;veloppement orient&eacute; objet &agrave; travers un travail d&#39;&eacute;quipe en appliquant un processus incr&eacute;mental, it&eacute;ratif et agile. Plus pr&eacute;cis&eacute;ment, le projet sera d&eacute;velopp&eacute; en suivant le processus OpenUP.</p>
+L’objectif de ce projet est de comprendre comment mettre en œuvre un développement orienté objet à travers un travail d'équipe en appliquant un processus incrémental, itératif et agile. Plus précisément, le projet sera développé en suivant le processus OpenUP.
 
-<p>Sujet :&nbsp;Passerelle pour compteur intelligent</p>
+Sujet : Passerelle pour compteur intelligent
 
-<p>Contributeurs du projet : Diaz Allan, Canihac Jean-Brice, Pascal jeremy, Mathieu Alexis</p>
+Contributeurs du projet : Diaz Allan, Canihac Jean-Brice, Pascal jeremy, Mathieu Alexis
+Phase d'inception
 
-<h2>Phase d&#39;inception</h2>
 
-<p>&nbsp;</p>
+Activités	Taches	Description tache	Etat	Responsable	Temps passé	Document produit
+Produire le plan de l'itération	-	
 
-<table border="1" cellpadding="1" cellspacing="1" height="435" width="1502">
-	<tbody>
-		<tr>
-			<td style="text-align: center;"><strong>Activit&eacute;s</strong></td>
-			<td style="text-align: center;"><strong>Taches</strong></td>
-			<td style="text-align: center;"><strong>Description tache</strong></td>
-			<td style="text-align: center;"><strong>Etat</strong></td>
-			<td style="text-align: center;"><strong>Responsable</strong></td>
-			<td style="text-align: center;"><strong>Temps pass&eacute;</strong></td>
-			<td style="text-align: center;"><strong>Document produit</strong></td>
-		</tr>
-		<tr>
-			<td>Produire le plan de l&#39;it&eacute;ration</td>
-			<td style="text-align: center;">-</td>
-			<td>
-			<ul>
-				<li>Cr&eacute;ation des demandes Redmine</li>
-				<li>Attribution des demandes Redmine</li>
-			</ul>
-			</td>
-			<td style="text-align: center;">Termin&eacute;</td>
-			<td style="text-align: center;">Allan Diaz</td>
-			<td style="text-align: center;">4H</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>Mettre en place l&#39;environnement de d&eacute;veloppement</td>
-			<td style="text-align: center;">-</td>
-			<td>
-			<ul>
-				<li>Configuration de Rhapsody (ajout d&#39;une var d&#39;environnement &#39;TELELOGIC_LICENSE_FILE&#39; )</li>
-				<li>Cr&eacute;ation d&#39;un projet REDMINE &#39;m1_ElecTek&#39; )</li>
-				<li>Cr&eacute;ation d&#39;un projet Eclipse</li>
-				<li>Cr&eacute;ation d&#39;un d&eacute;pot Git</li>
-			</ul>
-			</td>
-			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Allan Diaz</td>
-			<td style="text-align: center;">4H</td>
-			<td>&nbsp;</td>
-		</tr>
-		<tr>
-			<td>Produire le document de vision</td>
-			<td style="text-align: center;">#4007</td>
-			<td>&nbsp;</td>
-			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Jeremy Pascal</td>
-			<td style="text-align: center;">2H</td>
-			<td><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/827/Vision.docx">Document de vision</a></td>
-		</tr>
-		<tr>
-			<td rowspan="2">Identifier et d&eacute;crire les Use Case</td>
-			<td>#4036</td>
-			<td>Description des cas d&#39;utilisations</td>
-			<td style="text-align: center;">Termin&eacute;</td>
-			<td style="text-align: center;">J&eacute;r&eacute;my Pascal / Allan Diaz</td>
-			<td style="text-align: center;">4H</td>
-			<td>
-			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/912/UseCase_Definir_le_tarif.odt" id="0" name="Desc UC" target="_blank">D&eacute;finir le tarif</a></p>
+    Création des demandes Redmine
+    Attribution des demandes Redmine
 
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/948/UseCase_Informer_le_client_des_changements_tarifaires.odt" id="0" name="Desc UC" target="_blank">Informer le client des changements tarifaires</a></p>
+	Terminé	Allan Diaz	4H	
+Mettre en place l'environnement de développement	-	
 
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/950/Editer_son_profil.odt" id="0" name="Desc UC" target="_blank">Editer son profil</a></p>
+    Configuration de Rhapsody (ajout d'une var d'environnement 'TELELOGIC_LICENSE_FILE' )
+    Création d'un projet REDMINE 'm1_ElecTek' )
+    Création d'un projet Eclipse
+    Création d'un dépot Git
 
-			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/910/UseCase_Imprimer_une_facture.odt" id="0" name="Desc UC" target="_blank">Imprimer une facture</a></p>
+	Terminé	Allan Diaz	4H	
+Produire le document de vision	#4007	
+	Terminé	Jeremy Pascal	2H	Document de vision
+Identifier et décrire les Use Case	#4036	Description des cas d'utilisations	Terminé	Jérémy Pascal / Allan Diaz	4H	
 
-			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/909/UseCase_Choisir_un_fournisseur.odt" id="0" name="Desc UC" target="_blank">Choisir son fournisseur</a></p>
+Définir le tarif
 
-			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/908/UseCase_Consulter_sa_consommation.odt" id="0" name="Desc UC" target="_blank">Consulter sa consommation</a></p>
+Informer le client des changements tarifaires
 
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/942/UseCase_Consulter_les_mesures_energetiques.odt" id="0" name="Desc UC" target="_blank">Consulter les mesures energ&eacute;tiques</a></p>
-			</td>
-		</tr>
-		<tr>
-			<td>&nbsp;</td>
-			<td>Cr&eacute;ation d&#39;un diagramme des cas d&#39;utilisation</td>
-			<td style="text-align: center;">Termin&eacute;</td>
-			<td style="text-align: center;">Jean-Brice Canihac</td>
-			<td style="text-align: center;">2H</td>
-			<td><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/961/UC_ElecTek_new.png" id="0" name="Diag UC" target="_blank">Diagramme des cas d&#39;utilisation</a></td>
-		</tr>
-		<tr>
-			<td>D&eacute;crire les cas de test fonctionnel</td>
-			<td style="text-align: center;">#4009</td>
-			<td>&nbsp;</td>
-			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Allan Diaz</td>
-			<td style="text-align: center;">1H</td>
-			<td><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/830/Cas%20de%20test%20fonctionnel.docx">Cas des tests fonctionnels</a></td>
-		</tr>
-		<tr>
-			<td>Proposer des maquettes pour les IHM</td>
-			<td style="text-align: center;">#4010</td>
-			<td>&nbsp;</td>
-			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Jean-Brice Canihac</td>
-			<td style="text-align: center;">2H</td>
-			<td>
-			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/824/screen_1.png">Maquette de l&#39;&eacute;cran 1</a></p>
+Editer son profil
 
-			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/825/screen_2.png">Maquette de l&#39;&eacute;cran 2</a></p>
+Imprimer une facture
 
-			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/826/screen_3.png">Maquette de l&#39;&eacute;cran 3</a></p>
-			</td>
-		</tr>
-		<tr>
-			<td colspan="1" rowspan="2">Proposer l&#39;architecture initiale du syst&egrave;me</td>
-			<td style="text-align: center;">#3993</td>
-			<td>Cr&eacute;ation d&#39;un diagramme de classes</td>
-			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Alexis Mathieu</td>
-			<td style="text-align: center;">1H</td>
-			<td><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/907/Diag_classe.PNG">Diagramme de classe</a></td>
-		</tr>
-		<tr>
-			<td style="text-align: center;">#4006</td>
-			<td>Cr&eacute;ation d&#39;un diagramme d&#39;activit&eacute;</td>
-			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Alexis Mathieu</td>
-			<td style="text-align: center;">1H</td>
-			<td><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/823/sequence.png">Diagramme d&#39;activit&eacute;</a></td>
-		</tr>
-		<tr>
-			<td>Cr&eacute;ation d&#39;un diagramme de s&eacute;quence syst&egrave;me</td>
-			<td style="text-align: center;">#4034</td>
-			<td>&nbsp;</td>
-			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Jean-Brice Canihac</td>
-			<td style="text-align: center;">1H</td>
-			<td><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/963/Diag_seq_sys.png">Diagramme de s&egrave;quence syst&egrave;me</a></td>
-		</tr>
-	</tbody>
-</table>
+Choisir son fournisseur
 
-<p>&nbsp;</p>
+Consulter sa consommation
 
-<h2>Phase d&#39;&eacute;laboration</h2>
+Consulter les mesures energétiques
 
-<table border="1" cellpadding="1" cellspacing="1" height="145" width="1510">
-	<tbody>
-		<tr>
-			<td style="text-align: center;"><strong>Activit&eacute;s</strong></td>
-			<td style="text-align: center;"><strong>Taches</strong></td>
-			<td style="text-align: center;"><strong>Description tache</strong></td>
-			<td style="text-align: center;"><strong>Etat</strong></td>
-			<td style="text-align: center;"><strong>Responsable</strong></td>
-			<td style="text-align: center;"><strong>Temps pass&eacute;</strong></td>
-			<td style="text-align: center;"><strong>Document produit</strong></td>
-		</tr>
-		<tr>
-			<td>Cr&eacute;ation d&#39;un diagramme des cas d&#39;utilisation</td>
-			<td style="text-align: center;">&nbsp;</td>
-			<td>&nbsp;</td>
-			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Jean-Brice Canihac</td>
-			<td style="text-align: center;">2H</td>
-			<td><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/898/UC_ElecTek.PNG" id="0" name="diag UC" target="_blank">Diagramme des cas d&#39;utilisation</a></td>
-		</tr>
-		<tr>
-			<td>Cr&eacute;ation d&#39;un diagramme de classe avec patron MVC</td>
-			<td style="text-align: center;">#4033</td>
-			<td>&nbsp;</td>
-			<td>En cours</td>
-			<td style="text-align: center;">Alexis Mathieu</td>
-			<td style="text-align: center;">4H</td>
-			<td>&nbsp;</td>
-		</tr>
-	</tbody>
-</table>
+	Création d'un diagramme des cas d'utilisation	Terminé	Jean-Brice Canihac	2H	Diagramme des cas d'utilisation
+Décrire les cas de test fonctionnel	#4009	
+	Terminé	Allan Diaz	1H	Cas des tests fonctionnels
+Proposer des maquettes pour les IHM	#4010	
+	Terminé	Jean-Brice Canihac	2H	
 
-<p>&nbsp;</p>
+Maquette de l'écran 1
 
-<p>&nbsp;</p>
+Maquette de l'écran 2
+
+Maquette de l'écran 3
+Proposer l'architecture initiale du système	#3993	Création d'un diagramme de classes	Terminé	Alexis Mathieu	1H	Diagramme de classe
+#4006	Création d'un diagramme d'activité	Terminé	Alexis Mathieu	1H	Diagramme d'activité
+Création d'un diagramme de séquence système	#4034	Création de diagramme séquence système pour chaque cas d'utilisation	Terminé	Jean-Brice Canihac	1H	Diagramme de sèquence système
+
+
+Phase d'élaboration
+Activités	Taches	Description tache	Etat	Responsable	Temps passé	Document produit
+Création d'un diagramme des cas d'utilisation	
+	
+	Terminé	Jean-Brice Canihac	2H	Diagramme des cas d'utilisation
+Création d'un diagramme de classe avec patron MVC	#4033	
+	En cours	Alexis Mathieu	4H	
+
+C_Choisir fournisseur
+
+C_consulter consommation
+
+C_Editer profil
+
+C_imprimer facture
+
+C_consulter conso
+
+P_Definir tarif
+
+P_Notifier clients
+
+
+
