@@ -139,7 +139,21 @@
 			<td>Termin&eacute;</td>
 			<td style="text-align: center;">Jean-Brice Canihac</td>
 			<td style="text-align: center;">1H</td>
-			<td><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/963/Diag_seq_sys.png">Diagramme de s&egrave;quence syst&egrave;me</a></td>
+			<td>
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/994/SD_Consummer_Choisir_Fournisseur.PNG" id="0" name="diag UC" target="_blank">C_Choisir fournisseur</a></p>
+
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/995/SD_Consummer_Consulter_Consommation.PNG" id="0" name="diag UC" target="_blank">C_consulter consommation</a></p>
+
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/996/SD_Consummer_Editer_Profil.PNG" id="0" name="diag UC" target="_blank">C_Editer profil</a></p>
+
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/997/SD_Consummer_Imprimer_Facture.PNG" id="0" name="diag UC" target="_blank">C_imprimer facture</a></p>
+
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/998/SD_Provider_Consulter_Consommation.PNG" id="0" name="diag UC" target="_blank">C_consulter conso</a></p>
+
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/1000/SD_Provider_Definir_Tarif.PNG" id="0" name="diag UC" target="_blank">P_Definir tarif</a></p>
+
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/999/SD_Provider_Notifier_Clients.PNG" id="0" name="diag UC" target="_blank">P_Notifier clients</a></p>
+			</td>
 		</tr>
 	</tbody>
 </table>
@@ -172,24 +186,10 @@
 			<td>Cr&eacute;ation d&#39;un diagramme de classe avec patron MVC</td>
 			<td style="text-align: center;">#4033</td>
 			<td>&nbsp;</td>
-			<td>En cours</td>
+			<td>Termin&eacute;</td>
 			<td style="text-align: center;">Alexis Mathieu</td>
 			<td style="text-align: center;">4H</td>
-			<td>
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/994/SD_Consummer_Choisir_Fournisseur.PNG" id="0" name="diag UC" target="_blank">C_Choisir fournisseur</a></p>
-
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/995/SD_Consummer_Consulter_Consommation.PNG" id="0" name="diag UC" target="_blank">C_consulter consommation</a></p>
-
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/996/SD_Consummer_Editer_Profil.PNG" id="0" name="diag UC" target="_blank">C_Editer profil</a></p>
-
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/997/SD_Consummer_Imprimer_Facture.PNG" id="0" name="diag UC" target="_blank">C_imprimer facture</a></p>
-
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/998/SD_Provider_Consulter_Consommation.PNG" id="0" name="diag UC" target="_blank">C_consulter conso</a></p>
-
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/1000/SD_Provider_Definir_Tarif.PNG" id="0" name="diag UC" target="_blank">P_Definir tarif</a></p>
-
-			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/999/SD_Provider_Notifier_Clients.PNG" id="0" name="diag UC" target="_blank">P_Notifier clients</a></p>
-			</td>
+			<td>&nbsp;</td>
 		</tr>
 	</tbody>
 </table>
