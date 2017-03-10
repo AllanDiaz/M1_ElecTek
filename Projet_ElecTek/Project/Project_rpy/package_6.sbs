@@ -1,0 +1,220 @@
+I-Logix-RPY-Archive version 8.12.0 Java 9728113
+{ ISubsystem 
+	- _id = GUID 12c7801f-f478-4540-951c-c19201325313;
+	- _myState = 10240;
+	- _name = "package_6";
+	- _modifiedTimeWeak = 3.10.2017::11:21:32;
+	- _theMainDiagram = { IHandle 
+		- _m2Class = "IDiagram";
+		- _filename = "";
+		- _subsystem = "";
+		- _class = "";
+		- _name = "Diag_Classe_1";
+		- _id = GUID 4dd3ba93-fc9a-46cd-9453-1bf61e137c67;
+	}
+	- _lastID = 5;
+	- weakCGTime = 3.10.2017::11:21:32;
+	- strongCGTime = 3.10.2017::11:18:55;
+	- _defaultComposite = GUID 0d86f540-bc3f-46b2-b77a-a0b14ec27625;
+	- _eventsBaseID = -1;
+	- Classes = { IRPYRawContainer 
+		- size = 6;
+		- value = 
+		{ IClass 
+			- _id = GUID 0d86f540-bc3f-46b2-b77a-a0b14ec27625;
+			- _myState = 40960;
+			- _name = "TopLevel";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- weakCGTime = 1.2.1990::0:0:0;
+			- strongCGTime = 1.2.1990::0:0:0;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 859ccad8-a2ec-407a-8ca4-4b5a50eac552;
+			- _myState = 8192;
+			- _name = "Connexion";
+			- _modifiedTimeWeak = 3.10.2017::11:21:46;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Diag_Classe_1";
+				- _id = GUID 4dd3ba93-fc9a-46cd-9453-1bf61e137c67;
+			}
+			- weakCGTime = 3.10.2017::11:21:46;
+			- strongCGTime = 3.10.2017::11:21:7;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 1;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 247bc8fc-08b5-4f7e-8f8f-d0b7c8033347;
+					- _myState = 10240;
+					- _name = "itsAccueil";
+					- _modifiedTimeWeak = 3.10.2017::11:21:46;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 56008f0b-1e1b-4a95-92b3-45bddfbeb9ee;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 5057f0f9-dbd4-4e22-844d-05467925244a;
+			- _myState = 8192;
+			- _name = "Facture";
+			- _modifiedTimeWeak = 3.10.2017::11:21:13;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Diag_Classe_1";
+				- _id = GUID 4dd3ba93-fc9a-46cd-9453-1bf61e137c67;
+			}
+			- weakCGTime = 3.10.2017::11:21:13;
+			- strongCGTime = 3.10.2017::11:21:13;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID 56008f0b-1e1b-4a95-92b3-45bddfbeb9ee;
+			- _myState = 8192;
+			- _name = "Accueil";
+			- _modifiedTimeWeak = 3.10.2017::11:22:6;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Diag_Classe_1";
+				- _id = GUID 4dd3ba93-fc9a-46cd-9453-1bf61e137c67;
+			}
+			- weakCGTime = 3.10.2017::11:22:6;
+			- strongCGTime = 3.10.2017::11:21:20;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- Associations = { IRPYRawContainer 
+				- size = 3;
+				- value = 
+				{ IAssociationEnd 
+					- _id = GUID 8212479a-7197-46d4-92a5-77822f4981bf;
+					- _myState = 10240;
+					- _name = "itsFacture";
+					- _modifiedTimeWeak = 3.10.2017::11:21:59;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID 5057f0f9-dbd4-4e22-844d-05467925244a;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 5d6b9ac3-7509-421d-94d8-4c9c8220baa3;
+					- _myState = 10240;
+					- _name = "itsConsomation";
+					- _modifiedTimeWeak = 3.10.2017::11:22:3;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID ee93f414-c48a-46f3-afa3-f3d4c649cb66;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+				{ IAssociationEnd 
+					- _id = GUID 732c6d5b-7126-4a18-9992-8375aa69e97b;
+					- _myState = 10240;
+					- _name = "itsChoixFournisseur";
+					- _modifiedTimeWeak = 3.10.2017::11:22:6;
+					- _multiplicity = "1";
+					- _otherClass = { IClassifierHandle 
+						- _m2Class = "IClass";
+						- _id = GUID e1e6be22-2e31-4397-b560-547c974be9c3;
+					}
+					- _inverse = { IHandle 
+						- _m2Class = "";
+					}
+					- _linkName = "";
+					- _linkType = Assoc;
+					- _navigability = Navigable;
+				}
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID ee93f414-c48a-46f3-afa3-f3d4c649cb66;
+			- _myState = 8192;
+			- _name = "Consomation";
+			- _modifiedTimeWeak = 3.10.2017::11:21:28;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Diag_Classe_1";
+				- _id = GUID 4dd3ba93-fc9a-46cd-9453-1bf61e137c67;
+			}
+			- weakCGTime = 3.10.2017::11:21:28;
+			- strongCGTime = 3.10.2017::11:21:28;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+		{ IClass 
+			- _id = GUID e1e6be22-2e31-4397-b560-547c974be9c3;
+			- _myState = 8192;
+			- _name = "choixFournisseur";
+			- _modifiedTimeWeak = 3.10.2017::11:21:39;
+			- _theMainDiagram = { IHandle 
+				- _m2Class = "IDiagram";
+				- _filename = "";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "Diag_Classe_1";
+				- _id = GUID 4dd3ba93-fc9a-46cd-9453-1bf61e137c67;
+			}
+			- weakCGTime = 3.10.2017::11:21:39;
+			- strongCGTime = 3.10.2017::11:21:39;
+			- _multiplicity = "";
+			- _itsStateChart = { IHandle 
+				- _m2Class = "";
+			}
+			- _classModifier = Unspecified;
+		}
+	}
+	- _configurationRelatedTime = 1.1.1970::1:0:0;
+}
+
