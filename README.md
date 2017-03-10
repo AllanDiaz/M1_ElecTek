@@ -62,21 +62,25 @@
 		</tr>
 		<tr>
 			<td rowspan="2">Identifier et d&eacute;crire les Use Case</td>
-			<td>&nbsp;</td>
+			<td>#4036</td>
 			<td>Description des cas d&#39;utilisations</td>
-			<td style="text-align: center;">En cours</td>
+			<td style="text-align: center;">Termin&eacute;</td>
 			<td style="text-align: center;">J&eacute;r&eacute;my Pascal / Allan Diaz</td>
 			<td style="text-align: center;">4H</td>
 			<td>
 			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/912/UseCase_Definir_le_tarif.odt" id="0" name="Desc UC" target="_blank">D&eacute;finir le tarif</a></p>
 
-			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/911/UseCase_Editer_son_profile.odt" id="0" name="Desc UC" target="_blank">Editer son profil</a></p>
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/948/UseCase_Informer_le_client_des_changements_tarifaires.odt" id="0" name="Desc UC" target="_blank">Informer le client des changements tarifaires</a></p>
+
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/950/Editer_son_profil.odt" id="0" name="Desc UC" target="_blank">Editer son profil</a></p>
 
 			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/910/UseCase_Imprimer_une_facture.odt" id="0" name="Desc UC" target="_blank">Imprimer une facture</a></p>
 
 			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/909/UseCase_Choisir_un_fournisseur.odt" id="0" name="Desc UC" target="_blank">Choisir son fournisseur</a></p>
 
 			<p><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/908/UseCase_Consulter_sa_consommation.odt" id="0" name="Desc UC" target="_blank">Consulter sa consommation</a></p>
+
+			<p><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/942/UseCase_Consulter_les_mesures_energetiques.odt" id="0" name="Desc UC" target="_blank">Consulter les mesures energ&eacute;tiques</a></p>
 			</td>
 		</tr>
 		<tr>
@@ -85,7 +89,7 @@
 			<td style="text-align: center;">Termin&eacute;</td>
 			<td style="text-align: center;">Jean-Brice Canihac</td>
 			<td style="text-align: center;">2H</td>
-			<td><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/745/UC_ElecTek.PNG" id="0" name="Diag UC" target="_blank">Diagramme des cas d&#39;utilisation</a></td>
+			<td><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/961/UC_ElecTek_new.png" id="0" name="Diag UC" target="_blank">Diagramme des cas d&#39;utilisation</a></td>
 		</tr>
 		<tr>
 			<td>D&eacute;crire les cas de test fonctionnel</td>
@@ -130,12 +134,12 @@
 		</tr>
 		<tr>
 			<td>Cr&eacute;ation d&#39;un diagramme de s&eacute;quence syst&egrave;me</td>
-			<td style="text-align: center;">&nbsp;</td>
+			<td style="text-align: center;">#4034</td>
 			<td>&nbsp;</td>
-			<td>En cours</td>
+			<td>Termin&eacute;</td>
 			<td style="text-align: center;">Jean-Brice Canihac</td>
 			<td style="text-align: center;">1H</td>
-			<td>&nbsp;</td>
+			<td><a href="http://mass-projet.univ-tlse2.fr/redmine/attachments/download/963/Diag_seq_sys.png">Diagramme de s&egrave;quence syst&egrave;me</a></td>
 		</tr>
 	</tbody>
 </table>
@@ -166,7 +170,7 @@
 		</tr>
 		<tr>
 			<td>Cr&eacute;ation d&#39;un diagramme de classe avec patron MVC</td>
-			<td style="text-align: center;">&nbsp;</td>
+			<td style="text-align: center;">#4033</td>
 			<td>&nbsp;</td>
 			<td>En cours</td>
 			<td style="text-align: center;">Alexis Mathieu</td>
