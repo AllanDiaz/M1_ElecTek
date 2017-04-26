@@ -3,7 +3,7 @@ I-Logix-RPY-Archive version 8.12.0 Java 9728113
 	- _id = GUID 7bd7e3a8-0ae5-4406-8795-675cb18583ec;
 	- _myState = 8192;
 	- _name = "controleur";
-	- _modifiedTimeWeak = 3.10.2017::11:20:34;
+	- _modifiedTimeWeak = 4.26.2017::9:10:56;
 	- _theMainDiagram = { IHandle 
 		- _m2Class = "IDiagram";
 		- _filename = "";
@@ -12,9 +12,9 @@ I-Logix-RPY-Archive version 8.12.0 Java 9728113
 		- _name = "Diag_Classe_1";
 		- _id = GUID 4dd3ba93-fc9a-46cd-9453-1bf61e137c67;
 	}
-	- _lastID = 7;
+	- _lastID = 8;
 	- Declaratives = { IRPYRawContainer 
-		- size = 1;
+		- size = 2;
 		- value = 
 		{ IDiagram 
 			- _id = GUID 20998320-260d-42b0-b80e-565a9bdb8d27;
@@ -158,7 +158,28 @@ I-Logix-RPY-Archive version 8.12.0 Java 9728113
 					- m_nNameFormat = 0;
 					- m_nIsNameFormat = 0;
 					- Compartments = { IRPYRawContainer 
-						- size = 0;
+						- size = 2;
+						- value = 
+						{ CGICompartment 
+							- _id = GUID d0e9e199-4e1a-4752-a26d-21cedfcb2020;
+							- m_name = "Attribute";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
+						{ CGICompartment 
+							- _id = GUID c72fb9ed-0e21-4082-8875-8bb732f9a1b8;
+							- m_name = "Operation";
+							- m_displayOption = Explicit;
+							- m_bShowInherited = 0;
+							- m_bOrdered = 0;
+							- Items = { IRPYRawContainer 
+								- size = 0;
+							}
+						}
 					}
 					- Attrs = { IRPYRawContainer 
 						- size = 0;
@@ -681,8 +702,27 @@ I-Logix-RPY-Archive version 8.12.0 Java 9728113
 				- _id = GUID 7bd7e3a8-0ae5-4406-8795-675cb18583ec;
 			}
 		}
+		{ IInformationFlow 
+			- _id = GUID 8e05f694-205a-4530-8324-9a268add7ea3;
+			- _myState = 2048;
+			- _name = "controleur_model";
+			- _modifiedTimeWeak = 1.2.1990::0:0:0;
+			- end1_ = { IHandle 
+				- _m2Class = "ISubsystem";
+				- _id = GUID 7bd7e3a8-0ae5-4406-8795-675cb18583ec;
+			}
+			- end2_ = { IHandle 
+				- _m2Class = "ISubsystem";
+				- _filename = "model.sbs";
+				- _subsystem = "";
+				- _class = "";
+				- _name = "model";
+				- _id = GUID f1667751-ca2d-44f2-9412-2c9a6a1899df;
+			}
+			- direction_ = toEnd2;
+		}
 	}
-	- weakCGTime = 3.10.2017::11:20:34;
+	- weakCGTime = 4.26.2017::9:10:56;
 	- strongCGTime = 3.10.2017::11:18:50;
 	- _defaultComposite = GUID 6a6b73f3-b136-404c-a41b-95e2685d81d3;
 	- _eventsBaseID = -1;
@@ -693,9 +733,9 @@ I-Logix-RPY-Archive version 8.12.0 Java 9728113
 			- _id = GUID 6a6b73f3-b136-404c-a41b-95e2685d81d3;
 			- _myState = 40960;
 			- _name = "TopLevel";
-			- _modifiedTimeWeak = 1.2.1990::0:0:0;
-			- weakCGTime = 1.2.1990::0:0:0;
-			- strongCGTime = 1.2.1990::0:0:0;
+			- _modifiedTimeWeak = 3.10.2017::11:20:34;
+			- weakCGTime = 3.10.2017::11:20:34;
+			- strongCGTime = 3.10.2017::11:18:50;
 			- _multiplicity = "";
 			- _itsStateChart = { IHandle 
 				- _m2Class = "";
@@ -808,6 +848,6 @@ I-Logix-RPY-Archive version 8.12.0 Java 9728113
 			- _classModifier = Unspecified;
 		}
 	}
-	- _configurationRelatedTime = 1.1.1970::1:0:0;
+	- _configurationRelatedTime = 1.2.1990::0:0:0;
 }
 
