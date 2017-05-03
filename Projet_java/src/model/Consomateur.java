@@ -10,6 +10,7 @@
 
 package model;
 
+import java.util.Scanner;
 
 //----------------------------------------------------------------------------
 // model/Consomateur.java                                                                  
@@ -56,6 +57,23 @@ public class Consomateur {
     public void editerProfil() {
         //#[ operation editerProfil() 
         //#]
+    	
+    	// create a scanner so we can read the command-line input
+        Scanner scanner = new Scanner(System.in);
+
+        //  prompt for the user's name
+        System.out.print("Changez votre nom: ");
+
+        // get their input as a String
+        setNom(scanner.next());
+
+        // prompt for their age
+        System.out.print("Changez votre prenom: ");
+
+        // get the age as an int
+        setPrenom(scanner.next());
+
+        System.out.println("Modification effecyué, votre nom est : "+this.nom+" et votre prenom est : " + this.prenom);
     }
     
     //## operation imprimerFacture() 
