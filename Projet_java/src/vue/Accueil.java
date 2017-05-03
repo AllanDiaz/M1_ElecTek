@@ -10,6 +10,9 @@
 
 package vue;
 
+import java.awt.Color;
+
+import javax.swing.JFrame;
 
 //----------------------------------------------------------------------------
 // vue/Accueil.java                                                                  
@@ -19,7 +22,7 @@ package vue;
 
 
 //## class Accueil 
-public class Accueil {
+public class Accueil{
     
     protected choixFournisseur itsChoixFournisseur;		//## link itsChoixFournisseur 
     
@@ -27,11 +30,16 @@ public class Accueil {
     
     protected Facture itsFacture;		//## link itsFacture 
     
+    public static void main(String args[]){
+    	//Accueil ac = new Accueil();
+    	Connexion c = new Connexion();
+    }
     
     // Constructors
     
     //## auto_generated 
     public  Accueil() {
+    	Connexion c = new Connexion();
     }
     
     //## auto_generated 
