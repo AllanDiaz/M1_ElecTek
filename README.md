@@ -4,7 +4,7 @@
 
 <p>Sujet :&nbsp;Passerelle pour compteur intelligent</p>
 
-<p>Contributeurs du projet : Diaz Allan, Canihac Jean-Brice, Pascal jeremy, Mathieu Alexis</p>
+<p>Contributeurs du projet : Diaz Allan, Canihac Jean-Brice, Pascal Jeremy (Dieu), Mathieu Alexis</p>
 
 <h2>Phase d&#39;inception</h2>
 
@@ -162,7 +162,7 @@
 
 <h2>Phase d&#39;&eacute;laboration</h2>
 
-<table border="1" cellpadding="1" cellspacing="1" height="145" width="1510">
+<table border="1" cellpadding="1" cellspacing="1" height="203" width="1510">
 	<tbody>
 		<tr>
 			<td style="text-align: center;"><strong>Activit&eacute;s</strong></td>
@@ -174,21 +174,46 @@
 			<td style="text-align: center;"><strong>Document produit</strong></td>
 		</tr>
 		<tr>
+			<td colspan="1" rowspan="3">Proposer un raffinement de l&#39;architecture initiale</td>
+			<td style="text-align: center;">#4087</td>
 			<td>Cr&eacute;ation d&#39;un diagramme des cas d&#39;utilisation</td>
-			<td style="text-align: center;">&nbsp;</td>
-			<td>&nbsp;</td>
 			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Jean-Brice Canihac</td>
+			<td>Jean-Brice Canihac</td>
 			<td style="text-align: center;">2H</td>
 			<td><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/898/UC_ElecTek.PNG" id="0" name="diag UC" target="_blank">Diagramme des cas d&#39;utilisation</a></td>
 		</tr>
 		<tr>
+			<td>#4033</td>
 			<td>Cr&eacute;ation d&#39;un diagramme de classe avec patron MVC</td>
-			<td style="text-align: center;">#4033</td>
+			<td>En cours</td>
+			<td>Alexis Mathieu</td>
+			<td style="text-align: center;">&nbsp;</td>
+			<td><a href="http://mass-etudiant.univ-tlse2.fr/redmine/attachments/download/1010/diag_classe_mvc.PNG" id="0" name="diag UC" target="_blank">Diagramme de classe MVC</a></td>
+		</tr>
+		<tr>
+			<td>#4086</td>
+			<td>Cr&eacute;ation d&#39;un diagramme de s&eacute;quence d&eacute;taill&eacute;</td>
+			<td>En cours</td>
+			<td>Jeremy Pascal</td>
+			<td style="text-align: center;">4H</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="1">G&eacute;n&eacute;ration du code source ( &agrave; partir de Rhapsody)</td>
+			<td>#4088</td>
 			<td>&nbsp;</td>
 			<td>Termin&eacute;</td>
-			<td style="text-align: center;">Alexis Mathieu</td>
+			<td>Alexis Mathieu</td>
 			<td style="text-align: center;">4H</td>
+			<td>&nbsp;</td>
+		</tr>
+		<tr>
+			<td colspan="1">Int&eacute;gration des frameworks utilis&eacute;s (Eclipse, Junit)</td>
+			<td>&nbsp;</td>
+			<td>&nbsp;</td>
+			<td>Termin&eacute;</td>
+			<td>Allan Diaz</td>
+			<td style="text-align: center;">1H</td>
 			<td>&nbsp;</td>
 		</tr>
 	</tbody>
