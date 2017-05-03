@@ -196,7 +196,11 @@ public class Consomateur {
     }
     
     public void afficher(){
-    	System.out.println("Client : "+this.nom+" "+this.prenom);
+    	if (fournisseur != null){
+        	System.out.println("Client : "+this.nom+" "+this.prenom+" avec comme fournisseur : "+this.fournisseur);
+    	}else{
+        	System.out.println("Client : "+this.nom+" "+this.prenom);
+    	}
     }
     
 }

@@ -58,7 +58,7 @@ public class Fournisseur {
     
     //## operation informerClientNewTarif() 
     public void informerClientNewTarif(int newTarif) {
-        System.out.println("Le nouveau tarif est : " + newTarif);
+        System.out.println("Le nouveau tarif est : " + newTarif+ "€");
     }
     
     //## auto_generated 
