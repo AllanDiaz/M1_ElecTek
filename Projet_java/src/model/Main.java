@@ -1,10 +1,18 @@
 package model;
 
+import ElecTek.Consummer;
+
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+		Consomateur c = new Consomateur();
+		
+		c.consulterConso();
+		c.imprimerFacture();
+		
+		
 
 	}
 
-}
+}	

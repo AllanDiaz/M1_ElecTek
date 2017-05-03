@@ -48,20 +48,16 @@ public class Consomateur {
     
     //## operation consulterConso() 
     public void consulterConso() {
-        //#[ operation consulterConso() 
-        //#]
+    	System.out.println("Votre facture est de 200e");
     }
     
     //## operation editerProfil() 
     public void editerProfil() {
-        //#[ operation editerProfil() 
-        //#]
     }
     
     //## operation imprimerFacture() 
     public void imprimerFacture() {
-        //#[ operation imprimerFacture() 
-        //#]
+    	System.out.println("Votre facture a été imprimé");
     }
     
     //## auto_generated 
