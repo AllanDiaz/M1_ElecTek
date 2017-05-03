@@ -24,7 +24,7 @@ import java.util.Scanner;
 //## class Consomateur 
 public class Consomateur {
     
-    protected String fournisseur;		//## attribute fournisseur 
+    protected Fournisseur fournisseur;		//## attribute fournisseur 
     
     protected int id;		//## attribute id 
     
@@ -66,12 +66,18 @@ public class Consomateur {
     	}
     	
     	Scanner scanner = new Scanner(System.in);
-
-        //  prompt for the user's name
-
-        setFournisseur(scanner.next());
-        
-        System.out.println("Votre fournisseur est maintenant : "+this.fournisseur);
+    	String var = scanner.next();    	
+    	
+    	if(var.equals("1")){
+    		this.setFournisseur(new Fournisseur("EDF",50));
+    	}else if (var.equals("2")){
+    		this.setFournisseur(new Fournisseur("ENGIE",60));
+    	}else{
+    		this.setFournisseur(new Fournisseur("ELEKTEK",40));
+    	}
+        //  prompt for the user's name       
+        System.out.println("Votre fournisseur est maintenant : ");
+        this.fournisseur.afficher();
     }
     
     //## operation consulterConso() 
@@ -107,12 +113,12 @@ public class Consomateur {
     }
     
     //## auto_generated 
-    public String getFournisseur() {
+    public Fournisseur getFournisseur() {
         return fournisseur;
     }
     
     //## auto_generated 
-    public void setFournisseur(String p_fournisseur) {
+    public void setFournisseur(Fournisseur p_fournisseur) {
         fournisseur = p_fournisseur;
     }
     
