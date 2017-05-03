@@ -19,7 +19,7 @@ package vue;
 
 
 //## class Accueil 
-public class Accueil {
+public class Accueil extends Frame{
     
     protected choixFournisseur itsChoixFournisseur;		//## link itsChoixFournisseur 
     
@@ -29,9 +29,12 @@ public class Accueil {
     
     
     // Constructors
-    
+
     //## auto_generated 
     public  Accueil() {
+    	
+    	Frame main = new Frame(600,800);    	
+    	
     }
     
     //## auto_generated 
