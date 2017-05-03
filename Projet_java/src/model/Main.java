@@ -7,7 +7,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		Consomateur c = new Consomateur("PASCAL","Jeremy");
-		Fournisseur f  = new Fournisseur("EDF");
+		Fournisseur f  = new Fournisseur("EDF",50);
 		
 		f.afficher();
 		f.definirTarif(100);
