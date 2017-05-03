@@ -31,6 +31,7 @@ public class Fournisseur {
     
     protected LinkedList<Passerelle> itsPasserelle_1 = new LinkedList<Passerelle>();		//## link itsPasserelle_1 
     
+    protected int tarif;
     
     // Constructors
     
@@ -39,9 +40,9 @@ public class Fournisseur {
     }
     
     //## operation definirTarif() 
-    public void definirTarif() {
-        //#[ operation definirTarif() 
-        //#]
+    public void definirTarif(int newTarif) {
+        this.tarif = newTarif;
+        informerClientNewTarif(newTarif);
     }
     
     //## operation genererFacture() 
@@ -51,9 +52,8 @@ public class Fournisseur {
     }
     
     //## operation informerClientNewTarif() 
-    public void informerClientNewTarif() {
-        //#[ operation informerClientNewTarif() 
-        //#]
+    public void informerClientNewTarif(int newTarif) {
+        System.out.println("Le nouveau tarif est : " + newTarif);
     }
     
     //## auto_generated 
