@@ -31,6 +31,7 @@ public class Fournisseur {
     
     protected LinkedList<Passerelle> itsPasserelle_1 = new LinkedList<Passerelle>();		//## link itsPasserelle_1 
     
+    protected int tarif;
     
     // Constructors
     
@@ -38,10 +39,15 @@ public class Fournisseur {
     public  Fournisseur() {
     }
     
+    public  Fournisseur(String nom,int tarif) {
+    	this.nom = nom;
+    	this.tarif = tarif;
+    }
+    
     //## operation definirTarif() 
-    public void definirTarif() {
-        //#[ operation definirTarif() 
-        //#]
+    public void definirTarif(int newTarif) {
+        this.tarif = newTarif;
+        informerClientNewTarif(newTarif);
     }
     
     //## operation genererFacture() 
@@ -51,9 +57,8 @@ public class Fournisseur {
     }
     
     //## operation informerClientNewTarif() 
-    public void informerClientNewTarif() {
-        //#[ operation informerClientNewTarif() 
-        //#]
+    public void informerClientNewTarif(int newTarif) {
+        System.out.println("Le nouveau tarif est : " + newTarif+ "€");
     }
     
     //## auto_generated 
@@ -133,6 +138,10 @@ public class Fournisseur {
             iter.next();
         }
         _clearItsPasserelle_1();
+    }
+    
+    public void afficher(){
+		System.out.println("Fournisseur : "+this.nom+" avec comme tarif : "+this.tarif+"€" );    	
     }
     
 }

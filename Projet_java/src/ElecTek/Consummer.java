@@ -34,6 +34,7 @@ public class Consummer {
     public  Consummer() {
     }
     
+    
 }
 /*********************************************************************
 	File Path	: DefaultComponent/DefaultConfig/ElecTek/Consummer.java

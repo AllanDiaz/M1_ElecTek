@@ -10,6 +10,9 @@
 
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 //----------------------------------------------------------------------------
 // model/Consomateur.java                                                                  
@@ -21,7 +24,7 @@ package model;
 //## class Consomateur 
 public class Consomateur {
     
-    protected String fournisseur;		//## attribute fournisseur 
+    protected Fournisseur fournisseur;		//## attribute fournisseur 
     
     protected int id;		//## attribute id 
     
@@ -40,37 +43,82 @@ public class Consomateur {
     public  Consomateur() {
     }
     
+    public  Consomateur(String nom, String prenom) {
+    	this.nom = nom;
+    	this.prenom = prenom;
+    }
+    
     //## operation choisirFournisseur() 
     public void choisirFournisseur() {
         //#[ operation choisirFournisseur() 
         //#]
+    	List<Fournisseur> maliste = new ArrayList();
+    	maliste.add(new Fournisseur("EDF",50));
+    	maliste.add(new Fournisseur("ENGIE",60));
+    	maliste.add(new Fournisseur("ELEKTEK",40));
+    	
+    	System.out.println("veuillez choisir un fournisseur parmis cette liste en rentrant son numeros:");
+    	int cpt = 0;
+    	for ( Fournisseur fournisseur : maliste){
+    		cpt ++;
+    		System.out.print(cpt+" : ");
+    		fournisseur.afficher();
+    	}
+    	
+    	Scanner scanner = new Scanner(System.in);
+    	String var = scanner.next();    	
+    	
+    	if(var.equals("1")){
+    		this.setFournisseur(new Fournisseur("EDF",50));
+    	}else if (var.equals("2")){
+    		this.setFournisseur(new Fournisseur("ENGIE",60));
+    	}else{
+    		this.setFournisseur(new Fournisseur("ELEKTEK",40));
+    	}
+        //  prompt for the user's name       
+        System.out.println("Votre fournisseur est maintenant : ");
+        this.fournisseur.afficher();
     }
     
     //## operation consulterConso() 
     public void consulterConso() {
-        //#[ operation consulterConso() 
-        //#]
+    	System.out.println("Votre facture est de 200e");
+    	
     }
     
     //## operation editerProfil() 
     public void editerProfil() {
-        //#[ operation editerProfil() 
-        //#]
+    	
+    	// create a scanner so we can read the command-line input
+        Scanner scanner = new Scanner(System.in);
+
+        //  prompt for the user's name
+        System.out.print("Changez votre nom: ");
+
+        // get their input as a String
+        setNom(scanner.next());
+
+        // prompt for their age
+        System.out.print("Changez votre prenom: ");
+
+        // get the age as an int
+        setPrenom(scanner.next());
+
+        System.out.println("Modification effecyué, votre nom est : "+this.nom+" et votre prenom est : " + this.prenom);
     }
     
     //## operation imprimerFacture() 
     public void imprimerFacture() {
-        //#[ operation imprimerFacture() 
-        //#]
+    	System.out.println("Votre facture a été imprimé");
     }
     
     //## auto_generated 
-    public String getFournisseur() {
+    public Fournisseur getFournisseur() {
         return fournisseur;
     }
     
     //## auto_generated 
-    public void setFournisseur(String p_fournisseur) {
+    public void setFournisseur(Fournisseur p_fournisseur) {
         fournisseur = p_fournisseur;
     }
     
@@ -145,6 +193,10 @@ public class Consomateur {
     //## auto_generated 
     public void _clearItsPasserelle_1() {
         itsPasserelle_1 = null;
+    }
+    
+    public void afficher(){	
+        	System.out.println("Client : "+this.nom+" "+this.prenom);    	
     }
     
 }
