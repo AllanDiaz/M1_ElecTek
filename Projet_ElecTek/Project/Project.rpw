@@ -10,8 +10,8 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 2;
-				- m_showCmd = 3;
+				- m_nFlags = 0;
+				- m_showCmd = 1;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -30,11 +30,11 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 				- _name = "Diag_Classe_1";
 				- _id = GUID 4dd3ba93-fc9a-46cd-9453-1bf61e137c67;
 			}
-			- _UpLeft = 978 130 ;
-			- _DownRight = 1990 831 ;
+			- _UpLeft = 195 0 ;
+			- _DownRight = 508 677 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 1;
-			- m_bIsActiveView = 1;
+			- m_bIsActiveView = 0;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -97,8 +97,8 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
 				- m_nLength = 44;
-				- m_nFlags = 0;
-				- m_showCmd = 1;
+				- m_nFlags = 2;
+				- m_showCmd = 3;
 				- m_ptMinPositionX = -1;
 				- m_ptMinPositionY = -1;
 				- m_ptMaxPositionX = -8;
@@ -118,10 +118,10 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 				- _id = GUID c3c657e7-2446-49db-82d8-3577d505b1e8;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 142 526 ;
+			- _DownRight = 1394 841 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 5;
-			- m_bIsActiveView = 0;
+			- m_bIsActiveView = 1;
 		}
 		{ CGEMdiDiagramParams 
 			- _placement = { CCommon_WINDOWPLACEMENT 
@@ -147,7 +147,7 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 				- _id = GUID 4ec8fa89-ec45-45f2-a269-a83e9ad9c4cc;
 			}
 			- _UpLeft = 0 0 ;
-			- _DownRight = 1040 541 ;
+			- _DownRight = 1039 541 ;
 			- _instanceName = "";
 			- m_nDiagramIndex = 0;
 			- m_bIsActiveView = 0;
@@ -182,7 +182,7 @@ I-Logix-RPY-Archive version 8.12.0 * 9728113
 			- m_bIsActiveView = 0;
 		}
 	}
-	- _fullName = "D:\\Bureau\\Outils\\M1_ElecTek\\Projet_ElecTek\\Project\\Project";
+	- _fullName = "\\\\qnap\\home\\Documents\\Projet_rhapsody\\M1_ElecTek\\Projet_ElecTek\\Project\\Project";
 	- m_SearchScopeList = { IRPYRawContainer 
 		- size = 0;
 	}
