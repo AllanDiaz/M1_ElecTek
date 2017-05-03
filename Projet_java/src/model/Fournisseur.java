@@ -39,8 +39,9 @@ public class Fournisseur {
     public  Fournisseur() {
     }
     
-    public  Fournisseur(String nom) {
+    public  Fournisseur(String nom,int tarif) {
     	this.nom = nom;
+    	this.tarif = tarif;
     }
     
     //## operation definirTarif() 
