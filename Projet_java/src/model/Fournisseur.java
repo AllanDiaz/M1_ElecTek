@@ -141,7 +141,7 @@ public class Fournisseur {
     }
     
     public void afficher(){
-		System.out.println("Fournisseur : "+this.nom+" avec comme tarif : "+this.tarif );    	
+		System.out.println("Fournisseur : "+this.nom+" avec comme tarif : "+this.tarif+"€" );    	
     }
     
 }
