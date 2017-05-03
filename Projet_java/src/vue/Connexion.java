@@ -19,6 +19,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.FocusEvent;
 import java.awt.event.FocusListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
@@ -32,6 +34,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+
+import com.sun.corba.se.impl.oa.poa.ActiveObjectMap.Key;
 
 
 //----------------------------------------------------------------------------
@@ -48,8 +52,6 @@ public class Connexion {
     
     private JTextField login;
     private JPasswordField password;
-    private int loginReset = 0;
-    private int passwordReset = 0;
     // Constructors
     
     //## auto_generated 
@@ -58,7 +60,7 @@ public class Connexion {
     	JFrame main = new JFrame();
     	main.setLayout(new FlowLayout());
     	main.setTitle("ElekTec");
-    	main.setBounds(20, 20, 550, 500);
+    	main.setBounds(20, 20, 550, 550);
     	main.setBackground(Color.WHITE);
     	
     	JLabel picLabel = new JLabel();
@@ -73,32 +75,12 @@ public class Connexion {
     	
     	JLabel coLabel = new JLabel("Se connecter");
     	coLabel.setFont(new Font("Arial",Font.BOLD,20));
+    	JLabel loginlabel = new JLabel("Login");
+    	JLabel passlabel = new JLabel("Mot de passe");
     	this.login = new JTextField();
+    	this.login.setPreferredSize(new Dimension(400, 30));
     	this.password = new JPasswordField();
-    	login.setText("Login");
-    	login.addFocusListener(new FocusListener() {
-			
-			@Override
-			public void focusLost(FocusEvent e) {}
-			
-			@Override
-			public void focusGained(FocusEvent e) {
-				resetLoginOnce();
-			}
-		});
-    	
-    	password.setText("Mot de passe");
-    	password.addFocusListener(new FocusListener() {
-			
-			@Override
-			public void focusLost(FocusEvent e) {}
-			
-			@Override
-			public void focusGained(FocusEvent e) {
-				resetPassOnce();
-				
-			}
-		});
+    	this.password.setPreferredSize(new Dimension(400, 30));
     	
     	JButton connexion = new JButton("Connexion");
     	
@@ -120,16 +102,38 @@ public class Connexion {
 			}
 		});
     	
+    	connexion.addKeyListener(new KeyListener() {
+			
+			@Override
+			public void keyTyped(KeyEvent e) {}		
+			@Override
+			public void keyReleased(KeyEvent e) {}
+			
+			@Override
+			public void keyPressed(KeyEvent e) {
+				// Press enter
+				if(e.getKeyCode() == 10){
+					connexion();
+				}
+			}
+		});
+    	
     	GridLayout gl = new GridLayout(5, 1);
     	gl.setVgap(20);
     	JPanel pane = new JPanel(gl);
     	main.add(picLabel);
     	pane.add(coLabel);
-    	pane.add(login);
-    	pane.add(password);
+    	JPanel lg = new JPanel(new FlowLayout());
+    	lg.add(loginlabel);
+    	lg.add(login);
+    	pane.add(lg);
+    	JPanel pwd = new JPanel(new FlowLayout());
+    	pwd.add(passlabel);
+    	pwd.add(password);
+    	pane.add(pwd);
     	pane.add(connexion);
     	pane.setVisible(true);
-    	pane.setPreferredSize(new Dimension(400, 300));
+    	pane.setPreferredSize(new Dimension(400, 360));
     	
     	main.add(pane);
     	main.setVisible(true);
@@ -139,22 +143,6 @@ public class Connexion {
     // TODO : Action onclick sur le bouton connexion
 	public void connexion(){
     	System.out.println("login: " + this.login.getText());
-    }
-    
-	// Reset du login sur le focus
-    public void resetLoginOnce(){
-    	if(this.loginReset == 0){
-    		this.login.setText("");
-    		this.loginReset = 1;
-    	}
-    }
-    
-    // Reset du password sur le focus
-    public void resetPassOnce(){
-    	if(this.passwordReset == 0){
-    		this.password.setText("");
-    		this.passwordReset = 1;
-    	}
     }
     
 }
