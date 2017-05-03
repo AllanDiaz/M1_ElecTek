@@ -1,6 +1,5 @@
 package model;
 
-import ElecTek.Consummer;
 
 public class Main {
 
