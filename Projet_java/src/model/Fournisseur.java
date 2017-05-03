@@ -39,6 +39,10 @@ public class Fournisseur {
     public  Fournisseur() {
     }
     
+    public  Fournisseur(String nom) {
+    	this.nom = nom;
+    }
+    
     //## operation definirTarif() 
     public void definirTarif(int newTarif) {
         this.tarif = newTarif;
@@ -133,6 +137,10 @@ public class Fournisseur {
             iter.next();
         }
         _clearItsPasserelle_1();
+    }
+    
+    public void afficher(){
+		System.out.println("Fournisseur : "+this.nom+" avec comme tarif : "+this.tarif );    	
     }
     
 }

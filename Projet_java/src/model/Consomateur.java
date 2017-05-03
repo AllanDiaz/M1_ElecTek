@@ -41,6 +41,11 @@ public class Consomateur {
     public  Consomateur() {
     }
     
+    public  Consomateur(String nom, String prenom) {
+    	this.nom = nom;
+    	this.prenom = prenom;
+    }
+    
     //## operation choisirFournisseur() 
     public void choisirFournisseur() {
         //#[ operation choisirFournisseur() 
@@ -160,6 +165,10 @@ public class Consomateur {
     //## auto_generated 
     public void _clearItsPasserelle_1() {
         itsPasserelle_1 = null;
+    }
+    
+    public void afficher(){
+    	System.out.println("Client : "+this.nom+" "+this.prenom);
     }
     
 }
