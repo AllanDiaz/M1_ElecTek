@@ -50,6 +50,7 @@ public class Consomateur {
     public void choisirFournisseur() {
         //#[ operation choisirFournisseur() 
         //#]
+    	
     }
     
     //## operation consulterConso() 
