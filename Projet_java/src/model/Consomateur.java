@@ -50,6 +50,7 @@ public class Consomateur {
     //## operation consulterConso() 
     public void consulterConso() {
     	System.out.println("Votre facture est de 200e");
+    	
     }
     
     //## operation editerProfil() 
