@@ -195,12 +195,8 @@ public class Consomateur {
         itsPasserelle_1 = null;
     }
     
-    public void afficher(){
-    	if (fournisseur != null){
-        	System.out.println("Client : "+this.nom+" "+this.prenom+" avec comme fournisseur : "+this.fournisseur);
-    	}else{
-        	System.out.println("Client : "+this.nom+" "+this.prenom);
-    	}
+    public void afficher(){	
+        	System.out.println("Client : "+this.nom+" "+this.prenom);    	
     }
     
 }
