@@ -13,9 +13,13 @@ public class Main {
 		f.definirTarif(100);
 		
 		c.afficher();
+		
 		c.consulterConso();
 		c.imprimerFacture();
 		c.editerProfil();
+		c.choisirFournisseur();
+		
+		c.afficher();
 		
 
 	}

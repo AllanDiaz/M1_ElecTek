@@ -10,6 +10,8 @@
 
 package model;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 //----------------------------------------------------------------------------
@@ -50,7 +52,26 @@ public class Consomateur {
     public void choisirFournisseur() {
         //#[ operation choisirFournisseur() 
         //#]
+    	List<Fournisseur> maliste = new ArrayList();
+    	maliste.add(new Fournisseur("EDF",50));
+    	maliste.add(new Fournisseur("ENGIE",60));
+    	maliste.add(new Fournisseur("ELEKTEK",40));
     	
+    	System.out.println("veuillez choisir un fournisseur parmis cette liste en rentrant son numeros:");
+    	int cpt = 0;
+    	for ( Fournisseur fournisseur : maliste){
+    		cpt ++;
+    		System.out.print(cpt+" : ");
+    		fournisseur.afficher();
+    	}
+    	
+    	Scanner scanner = new Scanner(System.in);
+
+        //  prompt for the user's name
+
+        setFournisseur(scanner.next());
+        
+        System.out.println("Votre fournisseur est maintenant : "+this.fournisseur);
     }
     
     //## operation consulterConso() 
