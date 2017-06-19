@@ -37,6 +37,8 @@ import javax.swing.JTextField;
 
 import com.sun.corba.se.impl.oa.poa.ActiveObjectMap.Key;
 
+import model.Consomateur;
+
 
 //----------------------------------------------------------------------------
 // vue/Connexion.java                                                                  
@@ -143,6 +145,13 @@ public class Connexion {
     // TODO : Action onclick sur le bouton connexion
 	public void connexion(){
     	System.out.println("login: " + this.login.getText());
+    	
+    	String[] ids = this.login.getText().split("\\.");
+    	String prenom = ids[0];
+    	String nom = ids[1];
+    	
+    	Consomateur c = new Consomateur(nom, prenom);
+    	System.out.println(c);
     }
     
 }
