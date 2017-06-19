@@ -1,0 +1,771 @@
+!SESSION 2017-06-13 14:14:07.264 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.jface.text 2 0 2017-06-13 14:16:18.779
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.number'
+
+!ENTRY org.eclipse.jface.text 2 0 2017-06-13 14:16:18.826
+!MESSAGE Duplicate template id: 'org.eclipse.wst.xslt.templates.xpath.round'
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-13 14:16:25.721
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\TEMP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2017-06-13 14:16:26.706
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.ui 4 0 2017-06-13 14:16:26.862
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.eclipse.equinox.p2.ui.sdk.scheduler' plug-in.
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2017-06-13 14:16:30.062
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.initializeProvisioningAgent(AgentImpl.java:530)
+	at org.eclipse.oomph.p2.internal.core.AgentManagerImpl.getCurrentAgent(AgentManagerImpl.java:188)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:349)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$4(SetupUIPlugin.java:344)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 12 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:16:30.297
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:16:30.984
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more
+!SESSION 2017-06-13 14:17:34.611 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-13 14:17:49.931
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\TEMP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2017-06-13 14:17:50.072
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.ui 4 0 2017-06-13 14:17:50.087
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.eclipse.equinox.p2.ui.sdk.scheduler' plug-in.
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2017-06-13 14:17:50.634
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.initializeProvisioningAgent(AgentImpl.java:530)
+	at org.eclipse.oomph.p2.internal.core.AgentManagerImpl.getCurrentAgent(AgentManagerImpl.java:188)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:349)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$4(SetupUIPlugin.java:344)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 12 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:17:51.119
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:17:51.580
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more
+!SESSION 2017-06-13 14:18:52.271 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-13 14:19:08.188
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\TEMP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2017-06-13 14:19:08.345
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.ui 4 0 2017-06-13 14:19:08.360
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.eclipse.equinox.p2.ui.sdk.scheduler' plug-in.
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2017-06-13 14:19:08.954
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.initializeProvisioningAgent(AgentImpl.java:530)
+	at org.eclipse.oomph.p2.internal.core.AgentManagerImpl.getCurrentAgent(AgentManagerImpl.java:188)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:349)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$4(SetupUIPlugin.java:344)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 12 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:19:09.407
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:19:09.908
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more
+!SESSION 2017-06-13 14:24:01.423 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-13 14:27:43.375
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\TEMP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2017-06-13 14:27:43.547
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.ui 4 0 2017-06-13 14:27:43.563
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.eclipse.equinox.p2.ui.sdk.scheduler' plug-in.
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2017-06-13 14:27:44.063
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.initializeProvisioningAgent(AgentImpl.java:530)
+	at org.eclipse.oomph.p2.internal.core.AgentManagerImpl.getCurrentAgent(AgentManagerImpl.java:188)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:349)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$4(SetupUIPlugin.java:344)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 12 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:27:44.359
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:27:44.938
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more
+!SESSION 2017-06-13 14:28:30.294 -----------------------------------------------
+eclipse.buildId=4.6.1.M20160907-1200
+java.version=1.8.0_131
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=fr_FR
+Framework arguments:  -product org.eclipse.epp.package.modeling.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.modeling.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-06-13 14:28:46.460
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\TEMP'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.ui.workbench 4 2 2017-06-13 14:28:46.647
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.ui.workbench".
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.ui 4 0 2017-06-13 14:28:46.663
+!MESSAGE Unable to execute early startup code for the org.eclipse.ui.IStartup extension contributed by the 'org.eclipse.equinox.p2.ui.sdk.scheduler' plug-in.
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.equinox.internal.p2.ui.sdk.scheduler.AutomaticUpdateScheduler.earlyStartup(AutomaticUpdateScheduler.java:89)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.runEarlyStartup(EarlyStartupRunnable.java:77)
+	at org.eclipse.ui.internal.EarlyStartupRunnable.run(EarlyStartupRunnable.java:53)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.ui.internal.Workbench$55.run(Workbench.java:2829)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 11 more
+
+!ENTRY org.eclipse.oomph.setup.ui 2 0 2017-06-13 14:28:47.210
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.getCurrentProfile(AgentImpl.java:369)
+	at org.eclipse.oomph.p2.internal.core.AgentImpl.initializeProvisioningAgent(AgentImpl.java:530)
+	at org.eclipse.oomph.p2.internal.core.AgentManagerImpl.getCurrentAgent(AgentManagerImpl.java:188)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.performStartup(SetupUIPlugin.java:349)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin.access$4(SetupUIPlugin.java:344)
+	at org.eclipse.oomph.setup.ui.SetupUIPlugin$1$1.run(SetupUIPlugin.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 12 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:28:47.491
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more
+
+!ENTRY org.eclipse.oomph.setup.core 2 0 2017-06-13 14:28:48.085
+!MESSAGE Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+!STACK 0
+java.lang.IllegalStateException: Profile not locked due to exception: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:108)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalLockProfile(SimpleProfileRegistry.java:870)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfileStateProperties(SimpleProfileRegistry.java:1219)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.ignoreExistingProfile(SimpleProfileRegistry.java:313)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.internalGetProfile(SimpleProfileRegistry.java:252)
+	at org.eclipse.equinox.internal.p2.engine.SimpleProfileRegistry.getProfile(SimpleProfileRegistry.java:179)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.create(SelfProductCatalogURIHandlerImpl.java:189)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl.access$0(SelfProductCatalogURIHandlerImpl.java:122)
+	at org.eclipse.oomph.setup.internal.core.util.SelfProductCatalogURIHandlerImpl$1ProductCatalogInput.loadResource(SelfProductCatalogURIHandlerImpl.java:95)
+	at org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl.doLoad(XMLResourceImpl.java:196)
+	at org.eclipse.oomph.base.util.BaseResourceImpl.doLoad(BaseResourceImpl.java:99)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1518)
+	at org.eclipse.emf.ecore.resource.impl.ResourceImpl.load(ResourceImpl.java:1297)
+	at org.eclipse.oomph.setup.internal.core.util.ResourceMirror$LoadJob.perform(ResourceMirror.java:223)
+	at org.eclipse.oomph.util.WorkerPool$Worker.run(WorkerPool.java:416)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: java.io.FileNotFoundException: C:\Program Files\eclipse\p2\org.eclipse.equinox.p2.engine\profileRegistry\epp.package.modeling.profile\.lock (Accès refusé)
+	at java.io.RandomAccessFile.open0(Native Method)
+	at java.io.RandomAccessFile.open(RandomAccessFile.java:316)
+	at java.io.RandomAccessFile.<init>(RandomAccessFile.java:243)
+	at org.eclipse.osgi.internal.location.Locker_JavaNio.lock(Locker_JavaNio.java:36)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:185)
+	at org.eclipse.osgi.internal.location.BasicLocation.lock(BasicLocation.java:152)
+	at org.eclipse.equinox.internal.p2.engine.ProfileLock.lock(ProfileLock.java:103)
+	... 15 more

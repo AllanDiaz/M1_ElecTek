@@ -6,6 +6,10 @@ import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 
+import com.itextpdf.text.log.SysoCounter;
+
+import vue.Facture;
+
 
 public class Main {
 
@@ -17,6 +21,8 @@ public class Main {
 		
 		Consomateur c = new Consomateur("PASCAL","Jeremy");
 		Fournisseur f  = new Fournisseur("EDF",50);
+		
+		c.setFournisseur(f);
 		Scanner scanner = new Scanner(System.in);
 		String commande ="";
 		List<String> maliste = new ArrayList();
@@ -25,6 +31,7 @@ public class Main {
     	maliste.add("3 : Afficher votre profil");
     	maliste.add("4 : Afficher votre fournisseur");
     	maliste.add("5 : Afficher consomation");
+    	maliste.add("6 : Telecharger facture");
     	maliste.add("q : Quitter");
 		 long temps = 2000;                      
 		 long startTime = 0;                    
@@ -60,6 +67,11 @@ public class Main {
 			case "5":	
 				System.out.println("Votre consomation est de "+conso+"kw");
 				break;
+			case "6":	
+				Facture fa = new Facture(c,conso);
+				fa.imprimer();
+				System.out.println("Votre facture est disponnible dans le dossier : '//qnap/home/Documents/facture/facture.pdf'");
+				break;
 			case "q":
 				commande = "q";
 				break;
@@ -73,5 +85,4 @@ public class Main {
 		timer.cancel();
 		timer.purge();
 	}
-
 }	

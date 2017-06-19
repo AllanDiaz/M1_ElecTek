@@ -66,6 +66,9 @@ public class Fournisseur {
         return id;
     }
     
+    public int getTarif() {
+        return tarif;
+    }
     //## auto_generated 
     public void setId(int p_id) {
         id = p_id;
