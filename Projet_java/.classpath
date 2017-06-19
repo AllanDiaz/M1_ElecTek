@@ -4,5 +4,6 @@
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="lib" path="//qnap/home/Documents/itext/forms-7.0.2.jar"/>
 	<classpathentry kind="lib" path="//qnap/home/Documents/itext/itextpdf-5.5.8.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
