@@ -6,8 +6,6 @@ import java.util.Scanner;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import com.itextpdf.text.log.SysoCounter;
-
 import vue.Facture;
 
 

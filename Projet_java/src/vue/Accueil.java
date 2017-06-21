@@ -10,8 +10,8 @@
 
 package vue;
 
-import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Desktop;
 import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
@@ -19,6 +19,7 @@ import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.File;
+import java.io.IOException;
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -73,15 +74,15 @@ public class Accueil{
     	
     	try{
     		BufferedImage pic = ImageIO.read(new File("src/img/elektec_logo.png"));
-    		 picLabel.setIcon(new ImageIcon(pic));
-    		 picLabel.setSize(new Dimension(840, 161));
+    		picLabel.setIcon(new ImageIcon(pic));
+    		picLabel.setSize(new Dimension(840, 161));
     	} catch (Exception e){
     		e.printStackTrace();
     	}
     	
     	this.account.add(picLabel);
     	
-    	GridLayout gridLayout = new GridLayout(5,1);
+    	GridLayout gridLayout = new GridLayout(6,1);
     	gridLayout.setVgap(10);
     	JPanel jpanel = new JPanel(gridLayout);
     	jpanel.setBackground(new Color(252, 221, 161));
@@ -103,18 +104,21 @@ public class Accueil{
 		 JButton bAfficherProfil = new JButton("Afficher mon profil");
 		 JButton bAfficherFournisseur = new JButton("Afficher mon fournisseur");
 		 JButton bAfficherConsommation = new JButton("Afficher ma consommation");
+		 JButton bPrintFacture = new JButton("Imprimer ma facture en PDF");
 		 
 		 bEditerProfil.setBackground(new Color(255, 255, 65));
 		 bChoisirFournisseur.setBackground(new Color(255, 255, 65));
 		 bAfficherProfil.setBackground(new Color(255, 255, 65));
 		 bAfficherFournisseur.setBackground(new Color(255, 255, 65));
 		 bAfficherConsommation.setBackground(new Color(255, 255, 65));
+		 bPrintFacture.setBackground(new Color(255, 255, 65));
 		 
 		 jpanel.add(bEditerProfil);
 		 jpanel.add(bChoisirFournisseur);
 		 jpanel.add(bAfficherProfil);
 		 jpanel.add(bAfficherFournisseur);
 		 jpanel.add(bAfficherConsommation);
+		 jpanel.add(bPrintFacture);
 		 
 		 bEditerProfil.addMouseListener(new MouseListener() {
 			
@@ -183,7 +187,7 @@ public class Accueil{
 					try{
 						c.getFournisseur().afficherUI();
 					} catch (Exception ex){
-						JOptionPane.showMessageDialog(null, "Vous n'avez pas encore choisi un fournisseur", "Erreur", JOptionPane.ERROR_MESSAGE);
+						JOptionPane.showMessageDialog(account, "Vous n'avez pas encore choisi un fournisseur", "Erreur", JOptionPane.ERROR_MESSAGE);
 					}
 				}
 			});
@@ -201,10 +205,37 @@ public class Accueil{
 				
 				@Override
 				public void mouseClicked(MouseEvent e) {
-					JOptionPane.showMessageDialog(null, "Votre consomation est de "+conso+"kw", "Consommation", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(account, "Votre consomation est de "+conso+"kw", "Consommation", JOptionPane.INFORMATION_MESSAGE);
 					
 				}
 			});
+		 
+		 bPrintFacture.addMouseListener(new MouseListener() {
+			
+				@Override
+				public void mouseReleased(MouseEvent e) {}
+				@Override
+				public void mousePressed(MouseEvent e) {}
+				@Override
+				public void mouseExited(MouseEvent e) {}
+				@Override
+				public void mouseEntered(MouseEvent e) {}
+				
+				@Override
+				public void mouseClicked(MouseEvent e) {
+					try {
+						Facture fa = new Facture(c,conso);
+						fa.imprimer();
+					} catch (Exception ee){
+						JOptionPane.showMessageDialog(account, "Erreur à la génération de la facture", "Erreur", JOptionPane.ERROR_MESSAGE);
+					}
+					try {
+						Desktop.getDesktop().open(new File("facture.pdf"));
+					} catch (IOException e1) {
+						JOptionPane.showMessageDialog(account, "Erreur à l'ouverture de la facture", "Erreur", JOptionPane.ERROR_MESSAGE);
+					}
+				}
+		});
     }
     
     //## auto_generated 
