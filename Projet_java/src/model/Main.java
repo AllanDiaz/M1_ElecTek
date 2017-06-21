@@ -25,7 +25,7 @@ public class Main {
 		c.setFournisseur(f);
 		Scanner scanner = new Scanner(System.in);
 		String commande ="";
-		List<String> maliste = new ArrayList();
+		List<String> maliste = new ArrayList<>();
     	maliste.add("1 : Editer profil");
     	maliste.add("2 : Choisir Fournisseur");
     	maliste.add("3 : Afficher votre profil");

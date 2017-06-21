@@ -10,9 +10,27 @@
 
 package vue;
 
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.GridLayout;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.util.Timer;
+import java.util.TimerTask;
 
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+
+import model.Consomateur;
 
 //----------------------------------------------------------------------------
 // vue/Accueil.java                                                                  
@@ -30,16 +48,163 @@ public class Accueil{
     
     protected Facture itsFacture;		//## link itsFacture 
     
-    public static void main(String args[]){
-    	//Accueil ac = new Accueil();
-    	Connexion c = new Connexion();
-    }
+    private JFrame account;
     
+    private Consomateur consomateur;
+    
+    static int  conso = 0;
+
     // Constructors
     
     //## auto_generated 
-    public  Accueil() {
-    	Connexion c = new Connexion();
+    public  Accueil(Consomateur c) {
+    	this.consomateur = c;
+    	
+    	this.account = new JFrame();
+    	FlowLayout f = new FlowLayout();
+    	f.setVgap(50);
+    	this.account.setLayout(f);
+    	this.account.setTitle("ElekTec - Gestion du compte");
+    	this.account.setBounds(20, 20, 550, 550);
+    	this.account.getContentPane().setBackground(new Color(252, 221, 161));
+    	this.account.setVisible(true);
+    	
+    	JLabel picLabel = new JLabel();
+    	
+    	try{
+    		BufferedImage pic = ImageIO.read(new File("src/img/elektec_logo.png"));
+    		 picLabel.setIcon(new ImageIcon(pic));
+    		 picLabel.setSize(new Dimension(840, 161));
+    	} catch (Exception e){
+    		e.printStackTrace();
+    	}
+    	
+    	this.account.add(picLabel);
+    	
+    	GridLayout gridLayout = new GridLayout(5,1);
+    	gridLayout.setVgap(10);
+    	JPanel jpanel = new JPanel(gridLayout);
+    	jpanel.setBackground(new Color(252, 221, 161));
+    	this.account.add(jpanel);
+    	
+    	 long temps = 2000;                      
+		 long startTime = 0;                    
+		 Timer timer = new Timer();             
+		 TimerTask tache = new TimerTask() {     
+		     @Override
+		         public void run() {
+		             Accueil.conso+=10;
+		         }
+		 };
+		 timer.scheduleAtFixedRate(tache,startTime,temps);  // ici on lance la mecanique
+		 
+		 JButton bEditerProfil = new JButton("Editer mon profil");
+		 JButton bChoisirFournisseur = new JButton("Choisir mon fournisseur");
+		 JButton bAfficherProfil = new JButton("Afficher mon profil");
+		 JButton bAfficherFournisseur = new JButton("Afficher mon fournisseur");
+		 JButton bAfficherConsommation = new JButton("Afficher ma consommation");
+		 
+		 bEditerProfil.setBackground(new Color(255, 255, 65));
+		 bChoisirFournisseur.setBackground(new Color(255, 255, 65));
+		 bAfficherProfil.setBackground(new Color(255, 255, 65));
+		 bAfficherFournisseur.setBackground(new Color(255, 255, 65));
+		 bAfficherConsommation.setBackground(new Color(255, 255, 65));
+		 
+		 jpanel.add(bEditerProfil);
+		 jpanel.add(bChoisirFournisseur);
+		 jpanel.add(bAfficherProfil);
+		 jpanel.add(bAfficherFournisseur);
+		 jpanel.add(bAfficherConsommation);
+		 
+		 bEditerProfil.addMouseListener(new MouseListener() {
+			
+			@Override
+			public void mouseReleased(MouseEvent e) {}
+			@Override
+			public void mousePressed(MouseEvent e) {}
+			@Override
+			public void mouseExited(MouseEvent e) {}
+			@Override
+			public void mouseEntered(MouseEvent e) {}
+			
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				c.editerProfilUI();
+			}
+		});
+		 
+		 bChoisirFournisseur.addMouseListener(new MouseListener() {
+				
+				@Override
+				public void mouseReleased(MouseEvent e) {}
+				@Override
+				public void mousePressed(MouseEvent e) {}
+				@Override
+				public void mouseExited(MouseEvent e) {}
+				@Override
+				public void mouseEntered(MouseEvent e) {}
+				
+				@Override
+				public void mouseClicked(MouseEvent e) {
+					c.choisirFournisseurUI();
+				}
+			});
+		 
+		 bAfficherProfil.addMouseListener(new MouseListener() {
+				
+				@Override
+				public void mouseReleased(MouseEvent e) {}
+				@Override
+				public void mousePressed(MouseEvent e) {}
+				@Override
+				public void mouseExited(MouseEvent e) {}
+				@Override
+				public void mouseEntered(MouseEvent e) {}
+				
+				@Override
+				public void mouseClicked(MouseEvent e) {
+					c.afficherUI();
+				}
+			});
+		 
+		 bAfficherFournisseur.addMouseListener(new MouseListener() {
+				
+				@Override
+				public void mouseReleased(MouseEvent e) {}
+				@Override
+				public void mousePressed(MouseEvent e) {}
+				@Override
+				public void mouseExited(MouseEvent e) {}
+				@Override
+				public void mouseEntered(MouseEvent e) {}
+				
+				@Override
+				public void mouseClicked(MouseEvent e) {
+					try{
+						c.getFournisseur().afficherUI();
+					} catch (Exception ex){
+						JOptionPane.showMessageDialog(null, "Vous n'avez pas encore choisi un fournisseur", "Erreur", JOptionPane.ERROR_MESSAGE);
+					}
+				}
+			});
+		 
+		 bAfficherConsommation.addMouseListener(new MouseListener() {
+				
+				@Override
+				public void mouseReleased(MouseEvent e) {}
+				@Override
+				public void mousePressed(MouseEvent e) {}
+				@Override
+				public void mouseExited(MouseEvent e) {}
+				@Override
+				public void mouseEntered(MouseEvent e) {}
+				
+				@Override
+				public void mouseClicked(MouseEvent e) {
+					JOptionPane.showMessageDialog(null, "Votre consomation est de "+conso+"kw", "Consommation", JOptionPane.INFORMATION_MESSAGE);
+					
+				}
+			});
     }
     
     //## auto_generated 

@@ -10,8 +10,14 @@
 
 package model;
 
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.Font;
 //## auto_generated
 import java.util.*;
+
+import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 //----------------------------------------------------------------------------
 // model/Fournisseur.java                                                                  
@@ -146,6 +152,33 @@ public class Fournisseur {
     public void afficher(){
 		System.out.println("Fournisseur : "+this.nom+" avec comme tarif : "+this.tarif+"€" );    	
     }
+    
+    @Override
+    public String toString(){
+    	return this.nom + "(" + this.tarif + " kw/h)";
+    }
+
+	public void afficherUI() {
+		JFrame frame;
+    	frame = new JFrame();
+    	FlowLayout f = new FlowLayout();
+    	f.setVgap(50);
+    	frame.setLayout(f);
+    	frame.setTitle("ElekTec - Mon profil");
+    	frame.setBounds(20, 20, 500, 200);
+    	frame.getContentPane().setBackground(new Color(252, 221, 161));
+    	frame.setVisible(true);
+    	
+    	JLabel displayLabel = new JLabel("Fournisseur : ");
+    	JLabel nomClient = new JLabel(this.nom.substring(0, 1).toUpperCase()+ this.nom.substring(1));
+    	JLabel tarif = new JLabel("- Tarif " + this.tarif + "€/kwh");
+    	nomClient.setFont(new Font("Arial", Font.BOLD, 20));
+    	
+    	frame.add(displayLabel);
+    	frame.add(nomClient);
+    	frame.add(tarif);
+		
+	}
     
 }
 /*********************************************************************

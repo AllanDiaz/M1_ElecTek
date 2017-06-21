@@ -10,9 +10,24 @@
 
 package model;
 
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.FlowLayout;
+import java.awt.Font;
+import java.awt.GridLayout;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
+
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
 
 //----------------------------------------------------------------------------
 // model/Consomateur.java                                                                  
@@ -80,6 +95,67 @@ public class Consomateur {
         this.fournisseur.afficher();
     }
     
+    public void choisirFournisseurUI(){
+    	Fournisseur[] liste = {new Fournisseur("EDF", 50), new Fournisseur("ENGIE", 60), new Fournisseur("ELEKTEC", 40)};
+    	//String fournisseurs[] = {"EDF", "ENGIE", "ELEKTEC"};
+    	//int tarif[] = {50, 60, 40};
+    	
+    	JFrame frame;
+    	frame = new JFrame();
+    	FlowLayout f = new FlowLayout();
+    	f.setVgap(30);
+    	frame.setLayout(f);
+    	frame.setTitle("ElekTec - Choisir un fournisseur");
+    	frame.setBounds(20, 20, 300, 250);
+    	frame.getContentPane().setBackground(new Color(252, 221, 161));
+    	frame.setVisible(true);
+    	
+    	JLabel titre;
+    	if(this.fournisseur == null){
+    		titre = new JLabel("Choisir un fournisseur");
+    	} else {
+    		titre = new JLabel("Changer de fournisseur");    				
+    	}
+    	titre.setFont(new Font("Arial", Font.BOLD, 20));
+    	frame.add(titre);
+    	
+    	GridLayout gl = new GridLayout(2, 1);
+    	gl.setVgap(8);
+    	JPanel jp = new JPanel(gl);
+    	jp.setPreferredSize(new Dimension(200, 60));
+    	jp.setBackground(new Color(252, 221, 161));
+    	
+    	JComboBox<Fournisseur> combo = new JComboBox<>(liste);
+    	JButton valider = new JButton("Sauvegarder");
+    	valider.setBackground(new Color(255, 255, 65));
+    	valider.setPreferredSize(new Dimension(200, 40));
+    	valider.addMouseListener(new MouseListener() {
+			
+			@Override
+			public void mouseReleased(MouseEvent e) {}		
+			@Override
+			public void mousePressed(MouseEvent e) {}	
+			@Override
+			public void mouseExited(MouseEvent e) {}
+			@Override
+			public void mouseEntered(MouseEvent e) {}
+			
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				setFournisseur((Fournisseur) combo.getSelectedItem());
+				JOptionPane.showMessageDialog(frame, "Fournisseur mis à jour", "Information", JOptionPane.INFORMATION_MESSAGE);
+				frame.dispose();
+			}
+    	});
+    	
+    	jp.add(combo);
+    	jp.add(valider);
+    	
+    	frame.add(jp);
+    	
+    	
+    }
+    
     //## operation consulterConso() 
     public void consulterConso() {
     	System.out.println("Votre facture est de 200e");
@@ -104,7 +180,72 @@ public class Consomateur {
         // get the age as an int
         setPrenom(scanner.next());
 
-        System.out.println("Modification effecyué, votre nom est : "+this.nom+" et votre prenom est : " + this.prenom);
+        System.out.println("Modification effectuée, votre nom est : "+this.nom+" et votre prenom est : " + this.prenom);
+    }
+    
+    public void editerProfilUI(){
+    	JFrame frame;
+    	frame = new JFrame();
+    	FlowLayout f = new FlowLayout();
+    	f.setVgap(30);
+    	frame.setLayout(f);
+    	frame.setTitle("ElekTec - Mon profil");
+    	frame.setBounds(20, 20, 300, 300);
+    	frame.getContentPane().setBackground(new Color(252, 221, 161));
+    	frame.setVisible(true);
+    	
+    	JLabel titre = new JLabel("Modifier mon profil");
+    	titre.setFont(new Font("Arial", Font.BOLD, 20));
+    	
+    	frame.add(titre);
+    	
+    	GridLayout gl = new GridLayout(3, 1);
+    	gl.setVgap(8);
+    	JTextField prenomfield = new JTextField(this.prenom);
+    	prenomfield.setPreferredSize(new Dimension(200, 30));
+    	JTextField nomfield = new JTextField(this.nom);
+    	nomfield.setPreferredSize(new Dimension(200, 30));
+    	
+    	JPanel jp = new JPanel(gl);
+    	jp.setPreferredSize(new Dimension(200, 120));
+    	jp.add(prenomfield);
+    	jp.add(nomfield);
+    	
+    	JButton valider = new JButton("Sauvegarder");
+    	valider.setPreferredSize(new Dimension(200, 40));
+    	valider.setBackground(new Color(255, 255, 65));
+    	valider.addMouseListener(new MouseListener() {
+			
+			@Override
+			public void mouseReleased(MouseEvent e) {}		
+			@Override
+			public void mousePressed(MouseEvent e) {}	
+			@Override
+			public void mouseExited(MouseEvent e) {}
+			@Override
+			public void mouseEntered(MouseEvent e) {}
+			
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				if(!nomfield.getText().equals("") && !prenomfield.getText().equals("")){
+					changerNomPrenom(nomfield.getText(), prenomfield.getText());
+					JOptionPane.showMessageDialog(frame, "Profil mis à jour", "Information", JOptionPane.INFORMATION_MESSAGE);
+					frame.dispose();
+				} else {
+					JOptionPane.showMessageDialog(frame, "Aucun des champs ne doit être vide", "Erreur", JOptionPane.ERROR_MESSAGE);
+				}
+			}
+		});
+    	
+    	jp.add(valider);
+    	jp.setBackground(new Color(252, 221, 161));
+    	frame.add(jp);
+    	
+    }
+    
+    public void changerNomPrenom(String nom, String prenom){
+    	this.nom = nom;
+    	this.prenom = prenom;
     }
     
     //## operation imprimerFacture() 
@@ -196,8 +337,28 @@ public class Consomateur {
     }
     
     public void afficher(){	
-        	System.out.println("Client : "+this.nom+" "+this.prenom);    	
+        System.out.println("Client : "+this.nom+" "+this.prenom);    	
     }
+    
+    public void afficherUI(){
+    	JFrame frame;
+    	frame = new JFrame();
+    	FlowLayout f = new FlowLayout();
+    	f.setVgap(50);
+    	frame.setLayout(f);
+    	frame.setTitle("ElekTec - Mon profil");
+    	frame.setBounds(20, 20, 500, 200);
+    	frame.getContentPane().setBackground(new Color(252, 221, 161));
+    	frame.setVisible(true);
+    	
+    	JLabel displayLabel = new JLabel("Compte client : ");
+    	JLabel nomClient = new JLabel(prenom.substring(0, 1).toUpperCase()+ prenom.substring(1) + " " + this.nom.toUpperCase());
+    	nomClient.setFont(new Font("Arial", Font.BOLD, 20));
+    	
+    	frame.add(displayLabel);
+    	frame.add(nomClient);
+    	
+   }
     
 }
 /*********************************************************************
